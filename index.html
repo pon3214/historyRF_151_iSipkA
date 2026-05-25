@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History.RF — Главная</title>
+    <link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-container">
+        <div class="logo-area">
+            <span class="company-name">History<span class="accent">.RF</span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active-link">Главная</a></li>
+                <li><a href="about.html">О сайте</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+            </ul>
+        </nav>
+        <button class="theme-btn" id="themeToggle" onclick="toggleTheme()">☀ Светлая</button>
+        <button class="burger" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html" onclick="toggleMenu()">Главная</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">О сайте</a></li>
+            <li><a href="catalog.html" onclick="toggleMenu()">Каталог</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <p class="hero-sub">Сайт-справочник</p>
+        <h1>Великие люди<br><span style="color:var(--primary-light)">России</span></h1>
+        <p class="hero-desc">Те, кто изменил ход истории, вдохновил народ и навсегда прославил Отечество</p>
+        <a href="catalog.html" class="btn-main">Открыть каталог</a>
+    </div>
+    <div class="hero-scroll">↓</div>
+</section>
+
+<!-- О САЙТЕ — краткая врезка -->
+<section class="about fade-in" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <span>О проекте</span>
+                <h2>Зачем этот сайт?</h2>
+                <p>
+                    History.RF — справочник по выдающимся историческим личностям России. 
+                    Здесь собраны правители, полководцы, учёные, писатели, первопроходцы и деятели культуры — 
+                    люди, без которых невозможно представить историю нашей страны.
+                </p>
+                <p>
+                    Сайт создан для школьников и студентов: удобный каталог с фильтрами по эпохам 
+                    поможет быстро найти нужную личность для домашнего задания или доклада.
+                </p>
+                <a href="about.html" class="btn-main" >Подробнее о проекте</a>
+            </div>
+            <div class="about-stats">
+                <div class="stat"><span class="stat-num">44+</span><span class="stat-label">Личностей</span></div>
+                <div class="stat"><span class="stat-num">7</span><span class="stat-label">Эпох</span></div>
+                <div class="stat"><span class="stat-num">X–XX</span><span class="stat-label">Века</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- СЛАЙДЕР — топ личностей -->
+<section class="gallery-section fade-in" id="gallery">
+    <div class="container">
+        <span class="section-label">Избранные личности</span>
+        <h2>Знаковые имена России</h2>
+    </div>
+
+    <div class="slider" id="slider">
+
+        <div class="item">
+            <div class="slide-bg" style="background-color:#1a0608;"></div>
+            <div class="slide-decor">I</div>
+            <div class="slide-content">
+                <span class="slide-era">1672 — 1725</span>
+                <h3>Пётр I Великий</h3>
+                <p>Первый российский император. Провёл масштабные реформы государства, армии и флота. Основал Санкт-Петербург и открыл России «окно в Европу».</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slide-bg" style="background-color:#0d1808;"></div>
+            <div class="slide-decor">II</div>
+            <div class="slide-content">
+                <span class="slide-era">1896 — 1974</span>
+                <h3>Георгий Жуков</h3>
+                <p>Маршал Советского Союза, четырежды Герой СССР. Один из ключевых полководцев Великой Отечественной войны. Принял капитуляцию Германии в 1945 году.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slide-bg" style="background-color:#08101a;"></div>
+            <div class="slide-decor">III</div>
+            <div class="slide-content">
+                <span class="slide-era">1834 — 1907</span>
+                <h3>Дмитрий Менделеев</h3>
+                <p>Создал периодическую таблицу химических элементов — одно из величайших открытий в истории науки, лежащее в основе всей современной химии.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slide-bg" style="background-image:'жуков.jpeg' ;"></div>
+            <div class="slide-decor">IV</div>
+            <div class="slide-content">
+                <span class="slide-era">1799 — 1837</span>
+                <h3>Александр Пушкин</h3>
+                <p>Основоположник современного русского литературного языка. «Евгений Онегин», «Капитанская дочка» — вечная классика мировой литературы.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slide-bg" style="background-color:#08080f;"></div>
+            <div class="slide-decor">V</div>
+            <div class="slide-content">
+                <span class="slide-era">1934 — 1968</span>
+                <h3>Юрий Гагарин</h3>
+                <p>Первый человек в космосе. 12 апреля 1961 года совершил орбитальный полёт вокруг Земли, открыв человечеству эпоху пилотируемой космонавтики.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slide-bg" style="background-color:#120808;"></div>
+            <div class="slide-decor">VI</div>
+            <div class="slide-content">
+                <span class="slide-era">1711 — 1765</span>
+                <h3>Михаил Ломоносов</h3>
+                <p>Первый великий русский учёный. Открытия в физике, химии, астрономии. Основал Московский университет и заложил основы русского литературного языка.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slide-bg" style="background-color:#0a1208;"></div>
+            <div class="slide-decor">VII</div>
+            <div class="slide-content">
+                <span class="slide-era">1828 — 1910</span>
+                <h3>Лев Толстой</h3>
+                <p>Автор «Войны и мира» и «Анны Карениной». Один из величайших писателей в истории человечества, чьи произведения переведены на сотни языков.</p>
+            </div>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <div class="slider-dots" id="sliderDots"></div>
+    </div>
+</section>
+
+<!-- ПРИЗЫВ К ДЕЙСТВИЮ -->
+<section style="padding:80px 0; text-align:center;" class="fade-in">
+    <div class="container">
+        <span class="section-label">Готов изучать?</span>
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(20px,4vw,35px); margin-bottom:16px;">44 личности ждут тебя</h2>
+        <p style="color:var(--text-muted); max-width:440px; margin:0 auto 32px; font: size 15px; line-height:1.9;">
+            Фильтруй по эпохам, ищи по имени, читай биографии — всё в одном месте.
+        </p>
+        <a href="catalog.html" class="btn-main">Перейти в каталог</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <span class="company-name">History<span class="accent">.RF</span></span>
+            <p>Сайт-справочник по историческим<br>личностям России</p>
+        </div>
+        <div class="footer-info">
+            <p>По вопросам и ошибкам:</p>
+            <p> г. Барнаул, ул. Путиловская, д. 52</p>
+            <p> +7 (923) 563-47-01</p>
+        </div>
+    </div>
+    <div class="footer-copy"><p> 2026 History.RF — Все права защищены</p></div>
+</footer>
+</body>
+</html>

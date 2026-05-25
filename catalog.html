@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History.RF — Каталог</title>
+    <link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+
+<!-- header -->
+<header>
+    <div class="header-container">
+        <div class="logo-area">
+            <span class="company-name">History<span class="accent">.RF</span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О сайте</a></li>
+                <li><a href="catalog.html" class="active-link">Каталог</a></li>
+            </ul>
+        </nav>
+        <button class="theme-btn" id="themeToggle" onclick="toggleTheme()">☀ Светлая</button>
+        <button class="burger" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html" onclick="toggleMenu()">Главная</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">О сайте</a></li>
+            <li><a href="catalog.html" onclick="toggleMenu()">Каталог</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO КАТАЛОГА -->
+<section class="catalog-hero">
+    <div class="container">
+        <span class="section-label">Справочник</span>
+        <h1>Каталог<br><span style="color:var(--primary-light)">личностей</span></h1>
+        <p>44 выдающихся человека, оставивших след в истории России. Фильтруй по эпохе или ищи по имени.</p>
+    </div>
+</section>
+
+<!-- ФИЛЬТРЫ -->
+<div class="catalog-controls">
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="🔍 Поиск по имени...">
+        <div class="era-filters" id="eraFilters"></div>
+    </div>
+</div>
+
+<!-- СЕТКА КАРТОЧЕК -->
+<section class="catalog-main">
+    <div class="container">
+        <div class="catalog-grid" id="catalogGrid">
+        </div>
+    </div>
+</section>
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+<div class="modal-overlay" id="personModal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal()">X</button>
+        <div class="modal-photo" id="modalPhoto">
+            <span class="card-initials" id="modalInitial"></span>
+        </div>
+        <div class="modal-body">
+            <span class="card-era"  id="modalEra"></span>
+            <h3 class="card-name"  id="modalName"></h3>
+            <span class="card-years" id="modalYears"></span>
+            <p class="card-desc"   id="modalDesc"></p>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <span class="company-name">History<span class="accent">.RF</span></span>
+            <p>Сайт-справочник по историческим<br>личностям России</p>
+        </div>
+        <div class="footer-info">
+            <p>По вопросам и ошибкам:</p>
+            <p> г. Барнаул, ул. Путиловская, д. 52</p>
+            <p> +7 (923) 563-47-01</p>
+        </div>
+    </div>
+    <div class="footer-copy"><p> 2026 History.RF — Все права защищены</p></div>
+</footer>
+</body>
+</html>

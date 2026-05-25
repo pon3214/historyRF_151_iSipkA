@@ -1,0 +1,66 @@
+         .about-page-hero {
+            padding: 80px 0 60px;
+            background: var(--bg2);
+            border-bottom: 1px solid var(--border);
+            transition: background-color 0.3s;
+        }
+        .about-page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 900; margin-bottom: 16px;
+        }
+        .about-page-hero p {
+            color: var(--text-muted); font-size: 0.95rem;
+            max-width: 540px; line-height: 1.9;
+        }
+
+        .about-blocks { padding: 70px 0 90px; }
+
+        .about-block {
+            display: grid; grid-template-columns: 1fr 2fr;
+            gap: 50px; align-items: start;
+            padding: 45px 0; border-bottom: 1px solid var(--border);
+        }
+        .about-block:last-child { border-bottom: none; }
+
+        .about-block-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem; font-weight: 900;
+            color: rgba(160,30,50,0.15); line-height: 1;
+            padding-top: 6px;
+        }
+        .about-block h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem; font-weight: 700;
+            margin-bottom: 14px;
+        }
+        .about-block p {
+            color: var(--text-muted); font-size: 0.93rem; line-height: 1.95;
+            margin-bottom: 12px;
+        }
+        .about-block p:last-child { margin-bottom: 0; }
+
+        .tech-list {
+            list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px;
+        }
+        .tech-list li {
+            padding: 6px 16px; border: 1px solid var(--border);
+            font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase;
+            color: var(--primary-light); font-weight: 600;
+        }
+
+        .era-overview { padding: 60px 0; background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); transition: background-color 0.3s; }
+        .era-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin-top: 36px; }
+        .era-item {
+            padding: 22px 20px; border: 1px solid var(--border);
+            background: rgba(160,30,50,0.03); transition: border-color 0.3s;
+        }
+        .era-item:hover { border-color: var(--primary-light); }
+        .era-item-icon { font-size: 1.6rem; margin-bottom: 10px; }
+        .era-item h4 { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 6px; }
+        .era-item p  { font-size: 0.8rem; color: var(--text-muted); line-height: 1.7; }
+
+        @media (max-width: 640px) {
+            .about-block { grid-template-columns: 1fr; gap: 16px; }
+            .about-block-num { font-size: 2.5rem; }
+        }
