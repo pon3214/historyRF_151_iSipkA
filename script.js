@@ -199,7 +199,7 @@ function renderCards() {
     });
 
     if (!filtered.length) {
-        grid.innerHTML = '<p class="no-results">Никого не нашли 😔 Попробуй другой запрос.</p>';
+        grid.innerHTML = '<p class="no-results">Никого не нашли. Попробуй другой запрос.</p>';
         return;
     }
 
